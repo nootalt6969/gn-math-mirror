@@ -29,16 +29,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iz-math</title>
-    <meta name="title" content="GN-Math">
-    <meta name="description" content="Play unbl*cked games like Crazy Cattle 3D and DriveMad on GN-Math. Fast, free, no downloads—perfect for school or home.">
+    <meta name="title" content="IZ-Math">
+    <meta name="description" content="gn math mirror made out of spite">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gn-math.github.io/">
-    <meta property="og:title" content="GN-Math">
-    <meta property="og:description" content="Play unbl*cked games like Crazy Cattle 3D and DriveMad on GN-Math. Fast, free, no downloads—perfect for school or home.">
+    <meta property="og:title" content="IZ-Math">
+    <meta property="og:description" content="gn math mirror made out of spite">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://gn-math.github.io/">
-    <meta name="twitter:title" content="GN-Math">
-    <meta name="twitter:description" content="Play unbl*cked games like Crazy Cattle 3D and DriveMad on GN-Math. Fast, free, no downloads—perfect for school or home.">
+    <meta name="twitter:title" content="IZ-Math">
+    <meta name="twitter:description" content="gn math mirror made out of spite">
     <style>
 :root {
     --primary: #a96dc5;
@@ -659,14 +659,8 @@ footer {
             </div>
         </div>
     </header>
-    <ins class="adsbygoogle"
-    style="display:block; text-align:center;"
-    data-ad-client="ca-pub-5521219086088837"
-    data-ad-slot="5549138288"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
+    <ins ></ins>
    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
    </script>
 
     <main>
@@ -710,14 +704,9 @@ footer {
         </div>
     </div>
 
-    <ins class="adsbygoogle"
-    style="display:block; text-align:center;"
-    data-ad-client="ca-pub-5521219086088837"
-    data-ad-slot="5549138288"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
+    <ins ></ins>
    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
+    
    </script>
     <footer>
         <div class="footer-links">
@@ -778,7 +767,7 @@ async function listZones() {
         const response = await fetch(zonesURL+"?t="+Date.now());
         const json = await response.json();
         zones = json;
-        zones[0].featured = true; // always gonna be the discord
+        zones[0].featured = false; // always gonna be the discord
         await fetchPopularity();
         sortZones();
         const search = new URLSearchParams(window.location.search);
@@ -1272,7 +1261,7 @@ function cloakIcon(url) {
 }
 function cloakName(string) {
     if ((string+"").trim().length === 0) {
-        document.title = "gn-math";
+        document.title = "iz-math";
         return;
     }
     document.title = string;
@@ -1312,8 +1301,8 @@ function showContact() {
     document.getElementById('popupTitle').textContent = "Contact";
     const popupBody = document.getElementById('popupBody');
     popupBody.innerHTML = `
-    <p>Discord: https://discord.gg/NAFw4ykZ7n</p>
-    <p>Email: gn.math.business@gmail.com</p>`;
+    <p>Discord: i dont reccomend joining the offical gn math discord server for <a href='/discordpsa.html'>reasons</a></p>
+    <p>Email: noot-uwu-nyaaaa@proton.me</p>`;
     popupBody.contentEditable = false;
     document.getElementById('popupOverlay').style.display = "flex";
 }
