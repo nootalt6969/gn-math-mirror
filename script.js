@@ -542,7 +542,7 @@ function cloakIcon(url) {
 }
 function cloakName(string) {
     if ((string+"").trim().length === 0) {
-        document.title = "gn-math";
+        document.title = "iz-math";
         return;
     }
     document.title = string;
@@ -572,6 +572,8 @@ settings.addEventListener('click', () => {
     <button id="settings-button" onclick="darkMode()">Toggle Dark Mode</button>
     <br><br>
     <button id="settings-button" onclick="tabCloak()">Tab Cloak</button>
+    <br><br>
+    <button id="settings-button" onclick="">About iz-math</button>
     <br>
     `;
     popupBody.contentEditable = false;
@@ -582,7 +584,7 @@ function showContact() {
     document.getElementById('popupTitle').textContent = "Contact";
     const popupBody = document.getElementById('popupBody');
     popupBody.innerHTML = `
-    <p>Discord: https://nootalt6969.github.io/gn-math-mirror/discordpsa.html</p>
+    <p>Discord: i dont reccomend joining the offical gn math discord server for <a href='/discordpsa.html'>reasons</a></p>
     <p>Email: noot-uwu-nyaaaa@proton.me</p>`;
     popupBody.contentEditable = false;
     document.getElementById('popupOverlay').style.display = "flex";
@@ -660,3 +662,4 @@ HTMLCanvasElement.prototype.toDataURL = function (...args) {
     return "";
 
 };
+
