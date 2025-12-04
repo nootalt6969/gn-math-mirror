@@ -5,10 +5,10 @@ const searchBar = document.getElementById('searchBar');
 const sortOptions = document.getElementById('sortOptions');
 // https://www.jsdelivr.com/tools/purge
 const zonesurls = [
-    "https://cdn.jsdelivr.net/gh/gn-math/assets@main/zones.json",
-    "https://cdn.jsdelivr.net/gh/gn-math/assets@latest/zones.json",
-    "https://cdn.jsdelivr.net/gh/gn-math/assets@master/zones.json",
-    "https://cdn.jsdelivr.net/gh/gn-math/assets/zones.json"
+    //"https://cdn.jsdelivr.net/gh/gn-math/assets@main/zones.json",
+    //"https://cdn.jsdelivr.net/gh/gn-math/assets@latest/zones.json",
+    //"https://cdn.jsdelivr.net/gh/gn-math/assets@master/zones.json",
+    "https://github.com/nootalt6969/iz-math-coversandstuff/blob/main/zones.json"
 ];
 let zonesURL = zonesurls[Math.floor(Math.random() * zonesurls.length)];
 const coverURL = "https://cdn.jsdelivr.net/gh/gn-math/covers@main";
@@ -662,4 +662,5 @@ HTMLCanvasElement.prototype.toDataURL = function (...args) {
     return "";
 
 };
+
 
