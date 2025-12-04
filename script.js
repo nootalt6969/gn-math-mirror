@@ -29,7 +29,7 @@ async function listZones() {
             shajson = await sharesponse.json();
             sha = shajson[0]['sha'];
             if (sha) {
-                zonesURL = `https://cdn.jsdelivr.net/gh/gn-math/assets@${sha}/zones.json`;
+                zonesURL = `https://github.com/nootalt6969/iz-math-coversandstuff/blob/main/zones.json`;
             }
           } catch (error) {
             try {
@@ -37,7 +37,7 @@ async function listZones() {
                 if (secondarysharesponse && secondarysharesponse.status === 200) {
                     sha = (await secondarysharesponse.text()).trim();
                     if (sha) {
-                        zonesURL = `https://cdn.jsdelivr.net/gh/gn-math/assets@${sha}/zones.json`;
+                        zonesURL = `https://github.com/nootalt6969/iz-math-coversandstuff/blob/main/zones.json`;
                     }
                 }
             } catch(error) {}
@@ -662,5 +662,6 @@ HTMLCanvasElement.prototype.toDataURL = function (...args) {
     return "";
 
 };
+
 
 
