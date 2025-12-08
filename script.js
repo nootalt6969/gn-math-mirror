@@ -60,7 +60,7 @@ async function listZones() {
                     if (zone.url.startsWith("http")) {
                         window.open(zone.url, "_blank");
                     } else {
-                        const url = zone.url.replace("{COVER_URL}", coverURL).replace("{HTML_URL}", htmlURL);
+                        const url = zone.url.replace("{COVER_URL}", coverURL).replace("{HTML_URL}", htmlURL).replace("{ZONECUSTOM_0}", customzone01);
                         fetch(url+"?t="+Date.now()).then(response => response.text()).then(html => {
                             document.documentElement.innerHTML = html;
                             const popup = document.createElement("div");
@@ -663,6 +663,7 @@ HTMLCanvasElement.prototype.toDataURL = function (...args) {
     return "";
 
 };
+
 
 
 
