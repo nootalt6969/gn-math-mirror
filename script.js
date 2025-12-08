@@ -60,7 +60,7 @@ async function listZones() {
                     if (zone.url.startsWith("http")) {
                         window.open(zone.url, "_blank");
                     } else {
-                        const url = zone.url.replace("{COVER_URL}", coverURL).replace("{URL}", htmlURL).replace("{ZONECUSTOM_0}", customzone01);
+                        const url = zone.url.replace("{COVER_URL}", coverURL).replace("{URL}", htmlURL);
                         fetch(url+"?t="+Date.now()).then(response => response.text()).then(html => {
                             document.documentElement.innerHTML = html;
                             const popup = document.createElement("div");
@@ -250,7 +250,7 @@ function openZone(file) {
     if (file.url.startsWith("http")) {
         window.open(file.url, "_blank");
     } else {
-        const url = zone.url.replace("{COVER_URL}", coverURL).replace("{HTML_URL}", htmlURL).replace("{ZONECUSTOM_0}", customzone01);
+        const url = zone.url.replace("{COVER_URL}", coverURL).replace("{HTML_URL}", htmlURL);
         fetch(url+"?t="+Date.now()).then(response => response.text()).then(html => {
             if (zoneFrame.contentDocument === null) {
                 zoneFrame = document.createElement("iframe");
@@ -663,6 +663,7 @@ HTMLCanvasElement.prototype.toDataURL = function (...args) {
     return "";
 
 };
+
 
 
 
